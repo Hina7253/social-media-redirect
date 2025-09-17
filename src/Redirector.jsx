@@ -3,12 +3,15 @@ import { useLocation, useParams } from 'react-router-dom';
 
 const USERNAME1 = "HarshYadav152";
 const USERNAME2 = "HarshYadav_152";
+const phone = "+918650758730"
 const socialProfiles = {
     github: `https://github.com/${USERNAME1}`,
     discord: `https://discord.gg/${USERNAME1}`,
     twitter: `https://twitter.com/${USERNAME2}`,
     linkedin: `https://linkedin.com/in/${USERNAME1}`,
-    devto: `https://dev.to/${USERNAME1}`
+    devto: `https://dev.to/${USERNAME1}`,
+    instagram:`https://instagram.com/${USERNAME2}`,
+    whatsapp:`https://wa.me/${phone}`
 };
 
 export default function Redirector() {
