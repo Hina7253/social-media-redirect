@@ -3,7 +3,8 @@ import { useLocation, useParams } from 'react-router-dom';
 
 const USERNAME1 = "HarshYadav152";
 const USERNAME2 = "HarshYadav_152";
-const phone = "+918650758730"
+const phone = "+918650758730";
+const bskyHandle = "HarshYadav.bsky.social";
 const socialProfiles = {
     github: `https://github.com/${USERNAME1}`,
     discord: `https://discord.gg/${USERNAME1}`,
@@ -11,7 +12,11 @@ const socialProfiles = {
     linkedin: `https://linkedin.com/in/${USERNAME1}`,
     devto: `https://dev.to/${USERNAME1}`,
     instagram:`https://instagram.com/${USERNAME2}`,
-    whatsapp:`https://wa.me/${phone}`
+    whatsapp:`https://wa.me/${phone}`,
+    community:`https://discord.gg/hbaMwruume`,
+    reddit: `https://www.reddit.com/user/${USERNAME1}`,
+    medium:`https://medium.com/@${USERNAME1}`,
+    bluesky:`https://bsky.app/profile/${bskyHandle}`
 };
 
 export default function Redirector() {

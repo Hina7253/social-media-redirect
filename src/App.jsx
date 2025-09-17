@@ -1,17 +1,29 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Redirector from './Redirector';
+import How from './how';
+import NotFound from './NotFound';
+import './App.css';
 
-export default function App() {
+function App() {
   return (
-    <Router>
+    <HashRouter>
       <Routes>
-        {/* Handle direct routes like /#/github */}
-        <Route path="/:platform" element={<Redirector />} />
-        {/* Handle query-based redirect like /#/join?social=instagram */}
+        <Route path="/example" element={<How />} />
+        <Route path="/github" element={<Redirector platform="github" />} />
+        <Route path="/twitter" element={<Redirector platform="twitter" />} />
+        <Route path="/linkedin" element={<Redirector platform="linkedin" />} />
+        <Route path="/discord" element={<Redirector platform="discord" />} />
+        <Route path="/devto" element={<Redirector platform="devto" />} />
+        <Route path="/whatsapp" element={<Redirector platform="whatsapp" />} />
+        <Route path="/instagram" element={<Redirector platform="instagram" />} />
+        <Route path="/community" element={<Redirector platform="community" />} />
+        <Route path="/reddit" element={<Redirector platform="reddit" />} />
+        <Route path="/bluesky" element={<Redirector platform="bluesky" />} />
         <Route path="/join" element={<Redirector />} />
-        {/* Optional: Add a fallback or homepage */}
-        <Route path="*" element={<div><h2>Welcome!</h2><p>Try /#/github or /#/join?social=instagram</p></div>} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
 }
+
+export default App;
