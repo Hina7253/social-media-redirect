@@ -37,7 +37,7 @@ Access the demo site and try it out:
 1. Clone this repository or create a new one:
    ```bash
    # Option 1: Clone this repo
-   git clone https://github.com/HarshYadav152/social-redirect.git
+   git clone https://github.com/HarshYadav152/social.git
    cd social-redirect
 
    # Option 2: Create from scratch

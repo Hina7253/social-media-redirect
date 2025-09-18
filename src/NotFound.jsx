@@ -2,13 +2,19 @@ import { Link } from 'react-router-dom';
 import './NotFound.css';
 
 function NotFound() {
-  // List of available social platforms
+  // List of all available social platforms
   const socialPlatforms = [
     { name: 'GitHub', path: '/github' },
     { name: 'Twitter', path: '/twitter' },
     { name: 'LinkedIn', path: '/linkedin' },
     { name: 'Discord', path: '/discord' },
-    { name: 'Dev.to', path: '/devto' }
+    { name: 'Dev.to', path: '/devto' },
+    { name: 'Instagram', path: '/instagram' },
+    { name: 'WhatsApp', path: '/whatsapp' },
+    { name: 'Community', path: '/community' },
+    { name: 'Reddit', path: '/reddit' },
+    { name: 'Medium', path: '/medium' },
+    { name: 'BlueSky', path: '/bluesky' }
   ];
 
   return (

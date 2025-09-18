@@ -1,6 +1,6 @@
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import Redirector from './Redirector';
-import How from './how';
+import How from './How';
 import NotFound from './NotFound';
 import './App.css';
 
@@ -8,7 +8,10 @@ function App() {
   return (
     <HashRouter>
       <Routes>
-        <Route path="/example" element={<How />} />
+        {/* Home route */}
+        <Route path="/" element={<How />} />
+        
+        {/* Social media redirects */}
         <Route path="/github" element={<Redirector platform="github" />} />
         <Route path="/twitter" element={<Redirector platform="twitter" />} />
         <Route path="/linkedin" element={<Redirector platform="linkedin" />} />
@@ -19,7 +22,11 @@ function App() {
         <Route path="/community" element={<Redirector platform="community" />} />
         <Route path="/reddit" element={<Redirector platform="reddit" />} />
         <Route path="/bluesky" element={<Redirector platform="bluesky" />} />
+        <Route path="/medium" element={<Redirector platform="medium" />} />
+        
+        {/* Query parameter redirect */}
         <Route path="/join" element={<Redirector />} />
+        
         <Route path="*" element={<NotFound />} />
       </Routes>
     </HashRouter>
