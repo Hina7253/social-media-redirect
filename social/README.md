@@ -20,10 +20,7 @@ A simple React application that redirects users to social media profiles using c
 - Dev.to: `/#/devto`
 - More can be easily added!
 
-## 🚀 Demo
 
-Access the demo site and try it out:
-[https://harshyadav152.github.io/how](https://harshyadav152.github.io/how)
 
 ## 🧰 Setup Your Own
 
@@ -168,4 +165,3 @@ MIT
 
 ---
 
-Created with ❤️ by [Harsh Yadav](https://github.com/HarshYadav152)
