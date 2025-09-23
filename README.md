@@ -169,3 +169,4 @@ MIT
 ---
 
 Created with ❤️ by [Harsh Yadav](https://github.com/HarshYadav152)
+Also check some great stuff from my side [resources](https://github.com/HarshYadav152/resources)
