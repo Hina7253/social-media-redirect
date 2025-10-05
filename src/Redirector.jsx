@@ -1,22 +1,22 @@
 import { useEffect, useState } from 'react';
 import { useLocation, useParams, Link } from 'react-router-dom';
 
-const USERNAME1 = "HarshYadav152";
-const USERNAME2 = "HarshYadav_152";
-const phone = "+918650758730";
-const bskyHandle = "HarshYadav152.bsky.social";
+const USERNAME1 = "Hina7253";
+const USERNAME2 = "Hina7253";
+const phone = "+917253940203";
+
 const socialProfiles = {
     github: `https://github.com/${USERNAME1}`,
     discord: `https://discord.gg/${USERNAME1}`,
-    twitter: `https://twitter.com/${USERNAME2}`,
-    linkedin: `https://linkedin.com/in/${USERNAME1}`,
-    devto: `https://dev.to/${USERNAME1}`,
-    instagram:`https://instagram.com/${USERNAME2}`,
+    // twitter: `https://twitter.com/${USERNAME2}`,
+    // linkedin: `https://linkedin.com/in/${USERNAME1}`,
+    // devto: `https://dev.to/${USERNAME1}`,
+    // instagram:`https://instagram.com/${USERNAME2}`,
     whatsapp:`https://wa.me/${phone}`,
-    community:`https://discord.gg/hbaMwruume`,
-    reddit: `https://www.reddit.com/user/${USERNAME1}`,
-    medium:`https://medium.com/@${USERNAME1}`,
-    bluesky:`https://bsky.app/profile/${bskyHandle}`
+    // community:`https://discord.gg/hbaMwruume`,
+    // reddit: `https://www.reddit.com/user/${USERNAME1}`,
+    // medium:`https://medium.com/@${USERNAME1}`,
+    // bluesky:`https://bsky.app/profile/${bskyHandle}`
 };
 
 export default function Redirector(props) {
